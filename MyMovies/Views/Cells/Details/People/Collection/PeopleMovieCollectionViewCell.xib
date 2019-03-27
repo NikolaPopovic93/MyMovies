@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PeopleMovieCollectionViewCell" id="8mD-GZ-YIg" userLabel="PeopleMovieCollectionViewCell" customClass="PeopleMovieCollectionViewCell" customModule="MyMovies" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AOu-yt-Huf">
+                        <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="film_icon" translatesAutoresizingMaskIntoConstraints="NO" id="vVO-tH-OKc">
+                                <rect key="frame" x="37.5" y="8" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="RRb-Ie-9pd"/>
+                                    <constraint firstAttribute="width" constant="60" id="is0-Th-xGC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fight Club" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYp-Q8-GVN">
+                                <rect key="frame" x="8" y="76" width="119" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vote: 7.4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvS-Nb-Vi9">
+                                <rect key="frame" x="8" y="97.5" width="119" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yvS-Nb-Vi9" firstAttribute="trailing" secondItem="MYp-Q8-GVN" secondAttribute="trailing" id="6gi-5d-uV1"/>
+                            <constraint firstItem="yvS-Nb-Vi9" firstAttribute="leading" secondItem="MYp-Q8-GVN" secondAttribute="leading" id="Aa0-jP-Tx3"/>
+                            <constraint firstItem="MYp-Q8-GVN" firstAttribute="top" secondItem="vVO-tH-OKc" secondAttribute="bottom" constant="8" id="FUB-HX-6LT"/>
+                            <constraint firstItem="vVO-tH-OKc" firstAttribute="top" secondItem="AOu-yt-Huf" secondAttribute="top" constant="8" id="IeQ-vl-rMS"/>
+                            <constraint firstItem="MYp-Q8-GVN" firstAttribute="leading" secondItem="AOu-yt-Huf" secondAttribute="leading" constant="8" id="RMl-pN-OBQ"/>
+                            <constraint firstAttribute="trailing" secondItem="MYp-Q8-GVN" secondAttribute="trailing" constant="8" id="ZC6-Wa-oNK"/>
+                            <constraint firstItem="vVO-tH-OKc" firstAttribute="centerX" secondItem="AOu-yt-Huf" secondAttribute="centerX" id="bEh-1o-nlO"/>
+                            <constraint firstItem="yvS-Nb-Vi9" firstAttribute="top" secondItem="MYp-Q8-GVN" secondAttribute="bottom" constant="8" id="wK8-86-RvR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="AOu-yt-Huf" firstAttribute="leading" secondItem="8mD-GZ-YIg" secondAttribute="leading" id="3vg-0D-DrR"/>
+                <constraint firstAttribute="bottom" secondItem="AOu-yt-Huf" secondAttribute="bottom" id="Dam-Q0-JbD"/>
+                <constraint firstItem="AOu-yt-Huf" firstAttribute="top" secondItem="8mD-GZ-YIg" secondAttribute="top" id="GHm-E5-apJ"/>
+                <constraint firstAttribute="trailing" secondItem="AOu-yt-Huf" secondAttribute="trailing" id="SaV-x6-7Wp"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="oa9-tc-VWA"/>
+            <size key="customSize" width="145" height="114"/>
+            <connections>
+                <outlet property="movieImageView" destination="vVO-tH-OKc" id="I32-Fj-9xa"/>
+                <outlet property="nameLabel" destination="MYp-Q8-GVN" id="RiD-P7-OMX"/>
+                <outlet property="voteLabel" destination="yvS-Nb-Vi9" id="zVF-XE-3bU"/>
+            </connections>
+            <point key="canvasLocation" x="216.80000000000001" y="125.4872563718141"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="film_icon" width="50" height="50"/>
+    </resources>
+</document>

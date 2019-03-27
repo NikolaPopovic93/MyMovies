@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCompanyCollectionViewCell" id="gTV-IL-0wX" customClass="ProductCompanyCollectionViewCell" customModule="MyMovies" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XpZ-Ok-JkF">
+                        <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="movie_projector" translatesAutoresizingMaskIntoConstraints="NO" id="B1f-Zu-Qs9">
+                                <rect key="frame" x="37.5" y="8" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="W5a-V6-NKp"/>
+                                    <constraint firstAttribute="height" constant="60" id="lxR-VG-GcD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ydt-vm-G6Z">
+                                <rect key="frame" x="0.0" y="76" width="135" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="B1f-Zu-Qs9" firstAttribute="top" secondItem="XpZ-Ok-JkF" secondAttribute="top" constant="8" id="31V-0p-Hp2"/>
+                            <constraint firstAttribute="trailing" secondItem="Ydt-vm-G6Z" secondAttribute="trailing" id="BvO-O0-XYJ"/>
+                            <constraint firstItem="Ydt-vm-G6Z" firstAttribute="leading" secondItem="XpZ-Ok-JkF" secondAttribute="leading" id="CK8-Z9-YrS"/>
+                            <constraint firstItem="B1f-Zu-Qs9" firstAttribute="centerX" secondItem="XpZ-Ok-JkF" secondAttribute="centerX" id="HaR-wZ-oxO"/>
+                            <constraint firstItem="Ydt-vm-G6Z" firstAttribute="top" secondItem="B1f-Zu-Qs9" secondAttribute="bottom" constant="8" id="MPp-2M-KUt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="XpZ-Ok-JkF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9Ec-43-d0U"/>
+                <constraint firstAttribute="bottom" secondItem="XpZ-Ok-JkF" secondAttribute="bottom" id="EtT-LW-RlX"/>
+                <constraint firstAttribute="trailing" secondItem="XpZ-Ok-JkF" secondAttribute="trailing" id="Q4U-DP-dET"/>
+                <constraint firstItem="XpZ-Ok-JkF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ikZ-sd-4mG"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="96" height="108"/>
+            <connections>
+                <outlet property="imageImageView" destination="B1f-Zu-Qs9" id="2kk-T0-QjW"/>
+                <outlet property="nameLabel" destination="Ydt-vm-G6Z" id="eqB-Rf-gnh"/>
+            </connections>
+            <point key="canvasLocation" x="173.59999999999999" y="128.18590704647679"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="movie_projector" width="50" height="50"/>
+    </resources>
+</document>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RatingCollectionViewCell" id="gTV-IL-0wX" customClass="RatingCollectionViewCell" customModule="MyMovies" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="106" height="76"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="106" height="76"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXs-bu-l7C">
+                        <rect key="frame" x="0.0" y="0.0" width="106" height="76"/>
+                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                        <state key="normal" title="1">
+                            <color key="titleColor" red="0.030342094600000001" green="0.10871060940000001" blue="0.14235165720000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="iXs-bu-l7C" secondAttribute="trailing" id="68d-Wb-L2j"/>
+                <constraint firstItem="iXs-bu-l7C" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="CCY-xV-5mt"/>
+                <constraint firstAttribute="bottom" secondItem="iXs-bu-l7C" secondAttribute="bottom" id="Cl6-nf-b0U"/>
+                <constraint firstItem="iXs-bu-l7C" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Io8-ug-mfw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="106" height="76"/>
+            <connections>
+                <outlet property="ratingButton" destination="iXs-bu-l7C" id="bIr-9A-DNM"/>
+            </connections>
+            <point key="canvasLocation" x="182.40000000000001" y="166.41679160419793"/>
+        </collectionViewCell>
+    </objects>
+</document>

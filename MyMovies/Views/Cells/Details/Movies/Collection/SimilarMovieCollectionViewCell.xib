@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SimilarMovieCollectionViewCell" id="gTV-IL-0wX" customClass="SimilarMovieCollectionViewCell" customModule="MyMovies" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="135" height="170"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="135" height="170"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zZW-L9-MKw">
+                        <rect key="frame" x="0.0" y="0.0" width="135" height="170"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="film_icon" translatesAutoresizingMaskIntoConstraints="NO" id="HeY-eN-KNi">
+                                <rect key="frame" x="32.5" y="8" width="70" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HeY-eN-KNi" secondAttribute="height" multiplier="1:1.4" id="f2A-Of-9B1"/>
+                                    <constraint firstAttribute="width" constant="70" id="z9q-ko-zkk"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fight Club" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qeg-xu-iVR">
+                                <rect key="frame" x="8" y="114" width="119" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vote: 7.4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4MG-mS-LlR">
+                                <rect key="frame" x="8" y="135.5" width="119" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4MG-mS-LlR" firstAttribute="top" secondItem="Qeg-xu-iVR" secondAttribute="bottom" constant="8" id="3V3-7c-3od"/>
+                            <constraint firstItem="4MG-mS-LlR" firstAttribute="leading" secondItem="Qeg-xu-iVR" secondAttribute="leading" id="C3m-2n-UJz"/>
+                            <constraint firstItem="4MG-mS-LlR" firstAttribute="trailing" secondItem="Qeg-xu-iVR" secondAttribute="trailing" id="CwK-0h-bSR"/>
+                            <constraint firstItem="Qeg-xu-iVR" firstAttribute="top" secondItem="HeY-eN-KNi" secondAttribute="bottom" constant="8" id="MVP-dV-D6H"/>
+                            <constraint firstItem="HeY-eN-KNi" firstAttribute="centerX" secondItem="zZW-L9-MKw" secondAttribute="centerX" id="Zmt-pK-Q34"/>
+                            <constraint firstItem="HeY-eN-KNi" firstAttribute="top" secondItem="zZW-L9-MKw" secondAttribute="top" constant="8" id="gta-dr-U05"/>
+                            <constraint firstItem="Qeg-xu-iVR" firstAttribute="leading" secondItem="zZW-L9-MKw" secondAttribute="leading" constant="8" id="p7u-VP-3Zj"/>
+                            <constraint firstAttribute="trailing" secondItem="Qeg-xu-iVR" secondAttribute="trailing" constant="8" id="vi7-MU-Cra"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="zZW-L9-MKw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="XoC-4w-8x9"/>
+                <constraint firstItem="zZW-L9-MKw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="YRY-Xn-3tp"/>
+                <constraint firstAttribute="trailing" secondItem="zZW-L9-MKw" secondAttribute="trailing" id="d0O-Eg-Qa7"/>
+                <constraint firstAttribute="bottom" secondItem="zZW-L9-MKw" secondAttribute="bottom" id="h23-YD-rp8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="145" height="149"/>
+            <connections>
+                <outlet property="filmImageImageView" destination="HeY-eN-KNi" id="Vg4-qk-tmy"/>
+                <outlet property="nameLabel" destination="Qeg-xu-iVR" id="nm3-eb-AOp"/>
+                <outlet property="voteLabel" destination="4MG-mS-LlR" id="BbY-PA-A1V"/>
+            </connections>
+            <point key="canvasLocation" x="216.80000000000001" y="141.22938530734635"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="film_icon" width="50" height="50"/>
+    </resources>
+</document>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "RightMenuViewController.tableView(_:didSelectRowAt:):RightMenuViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell.tag">
+            </PersistentString>
+            <PersistentString
+               value = "cell.nameLabel.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SocialTableViewCell.collectionView(_:numberOfItemsInSection:):SocialTableViewCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "ids.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PeopleTableViewCell.numberOfSections(in:):PeopleTableViewCell.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MovieApi.getPeoplesPopular(paging:CompletionHandler:):MovieAPI.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "kGetPeoplesPopular">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "RightMenuViewController.tableView(_:cellForRowAt:):RightMenuViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "selectedIds.contains(cell.tag)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Movie.fromDictionaryMovie(dictionary:):Movie.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MovieTableViewCell.filloutContent():MovieTableViewCell.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ListMoviesViewController.filloutPopUp(movie:):ListMoviesViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Utilities.getAbsolutPosterPath(imagePath: movie.posterPath)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ListMoviesViewController.getDiscover():ListMoviesViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Utilities.getDateStringForDiscover()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in HomeViewController.getGeners():HomeViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "SharedDataManager.sharedInstance.geners">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "RatingViewController.clickRating(button:):RatingViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "button.tag">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ListMoviesViewController.tableView(_:willDisplay:forRowAt:):ListMoviesViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cinema.totalResults - 1">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ListMoviesViewController.getGenre(genreIds:):ListMoviesViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Utilities.getStringGenres(listOfIds: genreIds)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PeopleCollectionViewCell.cast.didset:PeopleCollectionViewCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Utilities.getAbsolutPosterPath(imagePath: cast.profilePath))">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ListMoviesViewController.tableView(_:cellForRowAt:):ListMoviesViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cinema.movies[indexPath.row].id">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GLOBAL">
+         <PersistentStrings>
+            <PersistentString
+               value = "Utilities.getAbsolutPosterPath(imagePath: cast.profilePath)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static Utilities.getEnglishName(iso:):Utilities.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = " SharedDataManager.sharedInstance.languages">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in MainViewController.getCountries():MainViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "SharedDataManager.sharedInstance.countries">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ListMoviesViewController.reviewAction(_:):ListMoviesViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "button.tag">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MovieTableViewCell.awakeFromNib():MovieTableViewCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "heightTextView.constant">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
