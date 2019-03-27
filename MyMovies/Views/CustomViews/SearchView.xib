@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchView" customModule="MyMovies" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="H5Q-cd-ruj"/>
+                <outlet property="searchButton" destination="4qV-JJ-vHl" id="jun-lx-bng"/>
+                <outlet property="textField" destination="ALn-oo-bNU" id="C2q-Ib-NGe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3nA-ZF-u4V">
+                    <rect key="frame" x="0.0" y="20" width="375" height="74"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search.." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ALn-oo-bNU">
+                            <rect key="frame" x="16" y="22" width="261" height="30"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qV-JJ-vHl">
+                            <rect key="frame" x="299" y="19.5" width="60" height="35"/>
+                            <color key="backgroundColor" red="0.0" green="0.82484698300000003" blue="0.47212547059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="GTb-XQ-Bxf"/>
+                                <constraint firstAttribute="width" constant="60" id="wF8-sY-74m"/>
+                            </constraints>
+                            <state key="normal" title="Search">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.032337799668312073" green="0.11445318907499313" blue="0.14200028777122498" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="4qV-JJ-vHl" firstAttribute="leading" secondItem="ALn-oo-bNU" secondAttribute="trailing" constant="22" id="2QY-i6-4MJ"/>
+                        <constraint firstAttribute="trailing" secondItem="4qV-JJ-vHl" secondAttribute="trailing" constant="16" id="9cA-g2-mU8"/>
+                        <constraint firstAttribute="bottom" secondItem="ALn-oo-bNU" secondAttribute="bottom" constant="22" id="B5P-l9-vaj"/>
+                        <constraint firstItem="ALn-oo-bNU" firstAttribute="leading" secondItem="3nA-ZF-u4V" secondAttribute="leading" constant="16" id="GTT-HD-bIn"/>
+                        <constraint firstItem="ALn-oo-bNU" firstAttribute="top" secondItem="3nA-ZF-u4V" secondAttribute="top" constant="22" id="bdP-Qa-KbH"/>
+                        <constraint firstItem="4qV-JJ-vHl" firstAttribute="centerY" secondItem="3nA-ZF-u4V" secondAttribute="centerY" id="o9K-pN-CE8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3nA-ZF-u4V" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="JyO-7j-wb9"/>
+                <constraint firstItem="3nA-ZF-u4V" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="YbM-Xj-ZFw"/>
+                <constraint firstItem="3nA-ZF-u4V" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="pZv-JX-eiD"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="55.200000000000003" y="48.125937031484263"/>
+        </view>
+    </objects>
+</document>

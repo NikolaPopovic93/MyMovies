@@ -106,6 +106,18 @@ open class Utilities : NSObject {
         }
     }
     
+    class func convertDateToString(date : Date) -> String {
+        let dateFormater = DateFormatter()
+        dateFormater.dateFormat = "d MMM yyyy"
+        return dateFormater.string(from: date)
+    }
+    
+    class func convertStringToDate(dateString : String) -> Date {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d MMM yyyy"
+        return dateFormatter.date(from:dateString)!
+    }
+    
     class func getDateStringForDiscover() -> String {
         var result = ""
         let date = Date()

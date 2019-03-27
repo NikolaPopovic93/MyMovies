@@ -14,7 +14,7 @@ class LanguageTableViewCell: UITableViewCell {
     @IBOutlet weak var lanugageImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     
-    var datePicker = SCPopDatePicker()
+//    var datePicker = SCPopDatePicker()
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -33,9 +33,9 @@ class LanguageTableViewCell: UITableViewCell {
     }
     
     private func setDatePicker() {
-        datePicker.tapToDismiss = true
-        datePicker.datePickerType = SCDatePickerType.date
-        datePicker.showBlur = true
-        datePicker.btnFontColour = UIColor.red
+//        datePicker.tapToDismiss = true
+//        datePicker.datePickerType = SCDatePickerType.date
+//        datePicker.showBlur = true
+//        datePicker.btnFontColour = UIColor.red
     }
 }

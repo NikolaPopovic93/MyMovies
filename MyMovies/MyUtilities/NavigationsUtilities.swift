@@ -83,4 +83,13 @@ open class NavigatinosUtilities {
         }
         vc.navigationController?.pushViewController(ratingVC, animated: true)
     }
+    
+    class func selectDatePickerPopUp(vc : UIViewController, date : String?) {
+        let datePopUpVC = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "datePopUpVC") as! DatePopUpViewController
+        if let date = date {
+            datePopUpVC.date = Utilities.convertStringToDate(dateString: date)
+        }
+        datePopUpVC.delegate = vc as? DatePopUpDelegate
+        vc.present(datePopUpVC, animated: true, completion: nil)
+    }
 }

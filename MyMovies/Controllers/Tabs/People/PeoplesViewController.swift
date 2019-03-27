@@ -12,10 +12,14 @@ import SVProgressHUD
 class PeoplesViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var popUpView: SearchView!
+    @IBOutlet weak var topSearchConstraints: NSLayoutConstraint!
+    @IBOutlet weak var topTableConstraints: NSLayoutConstraint!
     
     private var peoples = [People]()
     private var paging = 1
     private var lastIndexPath = IndexPath(row: 0, section: 0)
+    private var isSearch = false
     
     private let refreshControl = UIRefreshControl()
     private let cellIdntifier = "PeoplesTableViewCell"
@@ -25,9 +29,32 @@ class PeoplesViewController: UIViewController {
 
         setTable()
         getPeoplesPopular()
+        NotificationCenter.default.addObserver(self, selector: #selector(searchPeople), name: NSNotification.Name(rawValue: "SEARCH_PEOPELE_NOTIFICATION"), object: nil)
     }
     
     // MARK: - Actions
+    @IBAction func searchAction(_ sender: UIButton) {
+        if !isSearch {
+            topSearchConstraints.constant = 0
+            topTableConstraints.constant = popUpView.frame.height
+            isSearch = !isSearch
+            UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 0.6, initialSpringVelocity: 10, options: [], animations: {
+                self.view.layoutIfNeeded()
+            }, completion: nil)
+        } else {
+            topSearchConstraints.constant = (-popUpView.frame.height * 2)
+            topTableConstraints.constant = 0
+            isSearch = !isSearch
+            UIView.animate(withDuration: 0.3) {
+                self.view.layoutIfNeeded()
+            }
+        }
+    }
+    
+    @objc func searchPeople() {
+        
+    }
+    
     @objc func refreshAction() {
         paging = 1
         lastIndexPath = IndexPath(row: 0, section: 0)

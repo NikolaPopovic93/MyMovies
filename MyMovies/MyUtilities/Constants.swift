@@ -14,7 +14,7 @@ let movieApi = "https://api.themoviedb.org/3/movie/"
 let genersApi = "https://api.themoviedb.org/3/genre/movie/"
 let discoverApi = "https://api.themoviedb.org/3/discover/movie?"
 let configurationApi = "https://api.themoviedb.org/3/configuration"
-let peopleApi = "https://api.themoviedb.org/3/person/"
+let peopleApi = "https://api.themoviedb.org/3/person"
 
 
 // Discover List
@@ -49,9 +49,10 @@ let kGetLanguages = "\(configurationApi)/languages?api_key=\(apiKey)"
 let kGetConfigurations = "\(configurationApi)?api_key=\(apiKey)"
 
 // Get Peoples
-let kGetPeople = "\(peopleApi)%@?api_key=\(apiKey)&language=en-US"
-let kGetPeopleCast = "\(peopleApi)%@/movie_credits?api_key=\(apiKey)&language=en-US"
-let kGetPeoplesPopular = "\(peopleApi)popular?api_key=\(apiKey)&language=en-US&page=%@"
+let kGetPeople = "\(peopleApi)/%@?api_key=\(apiKey)&language=en-US"
+let kGetPeopleCast = "\(peopleApi)/%@/movie_credits?api_key=\(apiKey)&language=en-US"
+let kGetPeoplesPopular = "\(peopleApi)/popular?api_key=\(apiKey)&language=en-US&page=%@"
+let kGetPeopleSearch = "\(peopleApi)?api_key=\(apiKey)&language=en-US&query=%@&page=%@&include_adult=false"
 
 // Cofiguration
 let kGetLanguagesConfiguration = "\(configurationApi)/languages?api_key=\(apiKey)"

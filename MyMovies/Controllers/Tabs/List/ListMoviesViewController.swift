@@ -66,7 +66,7 @@ class ListMoviesViewController: UIViewController {
         cinema = Cinema()
         refreshControl.endRefreshing()
         if isFilter {
-            getDiscover()
+            sortByGenres()
         } else {
             getMovies()
         }
@@ -194,7 +194,7 @@ extension ListMoviesViewController: UITableViewDelegate {
         if isFilter {
             if lastIndexPath.row == row {
                 if row != cinema.totalResults - 1 {
-                    getDiscover()
+                    sortByGenres()
                 }
             }
         } else {
@@ -272,7 +272,7 @@ extension ListMoviesViewController {
         }
     }
     
-    private func getDiscover() {
+    private func sortByGenres() {
         Utilities.startProgress()
         paging = 1
         MovieApi.sharedInstance.getSeacrchByType(paging: paging, genres: genresString, releaseDate: Utilities.getDateStringForDiscover(), type: movieType) { (code, error, response) in
@@ -305,7 +305,7 @@ extension ListMoviesViewController: GenresDelegate {
             getMovies()
         } else {
             isFilter = true
-            getDiscover()
+            sortByGenres()
         }
     }
 }

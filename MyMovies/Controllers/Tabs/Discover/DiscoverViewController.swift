@@ -28,6 +28,7 @@ enum SortBy: String, CaseIterable {
 class DiscoverViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var discoverButton: UIButton!
     
     private let languageIdentifier = "LanguageTableViewCell"
     private let ratingIdentifier = "RatingTableViewCell"
@@ -42,8 +43,18 @@ class DiscoverViewController: UIViewController {
         setViews()
     }
     
+    @IBAction func discoverAction(_ sender: UIButton) {
+        
+    }
+    
     private func setViews() {
         setTable()
+        setButton()
+    }
+    
+    private func setButton() {
+        discoverButton.setShadow()
+        discoverButton.layer.cornerRadius = 15
     }
     
     private func setTable() {
@@ -83,7 +94,6 @@ extension DiscoverViewController: UITableViewDataSource {
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: languageIdentifier, for: indexPath) as! LanguageTableViewCell
             cell.titleLabel.text = "Release Year"
-            cell.datePicker.delegate = self
             if let date = discover.releaseYear {
                 cell.nameLabel.text = date
             } else {
@@ -114,8 +124,7 @@ extension DiscoverViewController: UITableViewDelegate {
         case 1:
             NavigatinosUtilities.selectSortBy(vc: self, item: discover.sortBy!)
         case 2:
-            let cell = tableView.dequeueReusableCell(withIdentifier: languageIdentifier, for: indexPath) as! LanguageTableViewCell
-            cell.datePicker.show(attachToView: self.view)
+            NavigatinosUtilities.selectDatePickerPopUp(vc: self, date: discover.releaseYear)
             break
         case 3:
             NavigatinosUtilities.selectRating(vc: self, rating: discover.rating)
@@ -147,9 +156,10 @@ extension DiscoverViewController: LanguageDelegate, SortByDelegate, RatingDelega
     }
 }
 
-// MARK: - Date Picker
-extension DiscoverViewController: SCPopDatePickerDelegate {
-    func scPopDatePickerDidSelectDate(_ date: Date) {
-        print(date)
+// MARK: - DatePopUpDelegate
+extension DiscoverViewController: DatePopUpDelegate {
+    func getDate(date: Date) {
+        discover.releaseYear  = Utilities.convertDateToString(date: date)
+        tableView.reloadData()
     }
 }
