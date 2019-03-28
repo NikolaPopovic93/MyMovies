@@ -805,6 +805,36 @@
             </objects>
             <point key="canvasLocation" x="4631.884057971015" y="198.91304347826087"/>
         </scene>
+        <!--Test View Controller-->
+        <scene sceneID="ak7-Pf-1l7">
+            <objects>
+                <viewController storyboardIdentifier="testVC" id="ryN-tP-Hv0" customClass="TestViewController" customModule="MyMovies" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dFw-mB-FZf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YUr-C5-OaM">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YUr-C5-OaM" firstAttribute="leading" secondItem="jlu-kR-rb6" secondAttribute="leading" id="6yT-oL-ksD"/>
+                            <constraint firstItem="YUr-C5-OaM" firstAttribute="top" secondItem="jlu-kR-rb6" secondAttribute="top" id="7MI-mk-9cL"/>
+                            <constraint firstItem="jlu-kR-rb6" firstAttribute="bottom" secondItem="YUr-C5-OaM" secondAttribute="bottom" id="ATe-KG-bFV"/>
+                            <constraint firstItem="jlu-kR-rb6" firstAttribute="trailing" secondItem="YUr-C5-OaM" secondAttribute="trailing" id="eOa-B7-jA7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jlu-kR-rb6"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="YUr-C5-OaM" id="06P-Ar-6rN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0CX-It-6WE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5526" y="192"/>
+        </scene>
         <!--Search View Controller-->
         <scene sceneID="gh8-cc-48P">
             <objects>

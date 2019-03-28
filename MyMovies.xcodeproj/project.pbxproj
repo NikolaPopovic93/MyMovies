@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182600B0224CD0ED001F4CA0 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182600AF224CD0ED001F4CA0 /* TestViewController.swift */; };
+		182600B3224CD2FF001F4CA0 /* TestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182600B1224CD2FF001F4CA0 /* TestTableViewCell.swift */; };
+		182600B4224CD2FF001F4CA0 /* TestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182600B2224CD2FF001F4CA0 /* TestTableViewCell.xib */; };
 		18C0721B224B6AF700FB1537 /* DatePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C0721A224B6AF700FB1537 /* DatePopUpViewController.swift */; };
 		18C0721D224B7B8800FB1537 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C0721C224B7B8800FB1537 /* Extensions.swift */; };
 		18C07222224B91F700FB1537 /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C07221224B91F700FB1537 /* SearchView.xib */; };
@@ -105,6 +108,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		182600AF224CD0ED001F4CA0 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		182600B1224CD2FF001F4CA0 /* TestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewCell.swift; sourceTree = "<group>"; };
+		182600B2224CD2FF001F4CA0 /* TestTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestTableViewCell.xib; sourceTree = "<group>"; };
 		18C0721A224B6AF700FB1537 /* DatePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePopUpViewController.swift; sourceTree = "<group>"; };
 		18C0721C224B7B8800FB1537 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		18C07221224B91F700FB1537 /* SearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchView.xib; sourceTree = "<group>"; };
@@ -387,6 +393,7 @@
 				934C3D9621E1449E005352BD /* Details */,
 				936F19D621DA28CD004192C8 /* StartUp */,
 				936F19CD21DA2863004192C8 /* Tabs */,
+				182600AF224CD0ED001F4CA0 /* TestViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -514,6 +521,8 @@
 				9379F615220B2F9700769A1E /* Menu */,
 				937E7D7821DFE7710023B43E /* List */,
 				93C701C521DE6A920029F7FF /* Details */,
+				182600B1224CD2FF001F4CA0 /* TestTableViewCell.swift */,
+				182600B2224CD2FF001F4CA0 /* TestTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -743,6 +752,7 @@
 				9356CECB21E0EB5B00CC6A5C /* ProductCompanyCollectionViewCell.xib in Resources */,
 				93CE240B222E82BC005E12F2 /* SelectLanguageTableViewCell.xib in Resources */,
 				936C286B21B80CC70080DE77 /* Assets.xcassets in Resources */,
+				182600B4224CD2FF001F4CA0 /* TestTableViewCell.xib in Resources */,
 				936F19E621DA9C88004192C8 /* MovieTableViewCell.xib in Resources */,
 				937E7D8121DFED6F0023B43E /* SimilarMovieTableViewCell.xib in Resources */,
 				936E5C4721E24C580037F98F /* PeopleMoviesTableViewCell.xib in Resources */,
@@ -869,6 +879,7 @@
 				9350FBE4220E56440001C142 /* PeoplesTableViewCell.swift in Sources */,
 				93C701C821DE6ACF0029F7FF /* MovieDeatilsTableViewCell.swift in Sources */,
 				934C3D9821E144CA005352BD /* PeopleViewController.swift in Sources */,
+				182600B3224CD2FF001F4CA0 /* TestTableViewCell.swift in Sources */,
 				936C288221B89F040080DE77 /* MovieAPI.swift in Sources */,
 				9356CECA21E0EB5B00CC6A5C /* ProductCompanyCollectionViewCell.swift in Sources */,
 				936C286421B80CC50080DE77 /* AppDelegate.swift in Sources */,
@@ -876,6 +887,7 @@
 				936C287A21B898030080DE77 /* Cinema.swift in Sources */,
 				93EB90ED21E22D6E00B82FEE /* ProfileDetailsTableViewCell.swift in Sources */,
 				937E7D7421DF9B350023B43E /* PeopleTableViewCell.swift in Sources */,
+				182600B0224CD0ED001F4CA0 /* TestViewController.swift in Sources */,
 				934C3D9321E11CC2005352BD /* Language.swift in Sources */,
 				93C3E53C21DD267C0051D16F /* MovieDetails.swift in Sources */,
 				18C0721D224B7B8800FB1537 /* Extensions.swift in Sources */,

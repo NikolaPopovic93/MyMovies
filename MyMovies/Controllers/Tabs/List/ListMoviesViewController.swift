@@ -182,7 +182,10 @@ extension ListMoviesViewController: UITableViewDataSource {
 extension ListMoviesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let movie = cinema.movies[indexPath.row]
-        NavigatinosUtilities.selectDetailsMovie(vc: self, movieId : movie.id, movieName: movie.title)
+        //NavigatinosUtilities.selectDetailsMovie(vc: self, movieId : movie.id, movieName: movie.title)
+        let testVC = self.storyboard?.instantiateViewController(withIdentifier: "testVC") as! TestViewController
+        testVC.movies = cinema.movies
+        self.navigationController?.pushViewController(testVC, animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

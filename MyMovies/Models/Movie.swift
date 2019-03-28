@@ -23,6 +23,7 @@ class Movie {
     var overview : String!
     var releaseDate : String!
     var genresIds : [Int]!
+    var isExpand : Bool!
     
     init() {
         self.voteCount = 0
@@ -39,6 +40,7 @@ class Movie {
         self.overview = ""
         self.releaseDate = ""
         self.genresIds = [Int]()
+        self.isExpand = false
     }
     
     func fromDictionaryMovie(dictionary : NSDictionary) {
