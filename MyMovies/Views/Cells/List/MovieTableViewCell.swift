@@ -15,8 +15,9 @@ class MovieTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var genresLabel: UILabel!
     @IBOutlet weak var voteLabel: UILabel!
-    @IBOutlet weak var overviewTexView: UITextView!
     @IBOutlet weak var releasedLabel: UILabel!
+    @IBOutlet weak var overViewLabel: UILabel!
+    @IBOutlet weak var filmView: UIView!
     
     
     public var movie: Movie?
@@ -26,26 +27,12 @@ class MovieTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-//        if isExapnd {
-//            heightTextView.constant = Utilities.getTextViewHeight(textView: overviewTexView)
-//            self.layoutIfNeeded()
-//        } else {
-//            heightTextView.constant = 48.5
-//            self.layoutIfNeeded()
-//        }
-        
-        //defaultTextViewHeight = heightTextView.constant
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
     }
-    
-//    @IBAction func expandAction(_ sender: UIButton) {
-//
-//    }
     
     public func filloutContent() {
         if let movie = movie {
@@ -61,7 +48,9 @@ class MovieTableViewCell: UITableViewCell {
             genresLabel.text = Utilities.getGenres(genersIds: movie.genresIds)
             voteLabel.text = " \(String(describing: movie.voteAverage!))"
             releasedLabel.text = "Released:  \(Utilities.convertDate(dateString: movie.releaseDate))"
-            overviewTexView.text = Utilities.isStringValid(movie.overview) ? movie.overview : "No overview..."
+            overViewLabel.text = Utilities.isStringValid(movie.overview) ? movie.overview : "No overview..."
+            filmView.dropShadow()
+            filmView.layer.cornerRadius = 15
         }
     }
 }

@@ -20,7 +20,9 @@ class RatingViewController: UIViewController {
     private let numberOfRows = 10
     
     public var delegate : RatingDelegate?
-    public var selectedIndexPath = IndexPath(row: 0, section: 8)
+    public var selectedIndexPath = IndexPath(row: 0, section: 0)
+    public var lastedSelectedIndexPath = IndexPath(row: 0, section: 0)
+    public var reloadLatest = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,8 +45,15 @@ class RatingViewController: UIViewController {
     }
     
     @objc func clickRating(button: UIButton) {
-        selectedIndexPath.row = button.tag
-        collectionView.reloadData()
+        
+        if button.tag != lastedSelectedIndexPath.row {
+            lastedSelectedIndexPath.row = selectedIndexPath.row
+            reloadLatest = true
+            collectionView.reloadItems(at: [lastedSelectedIndexPath])
+            selectedIndexPath.row = button.tag
+            reloadLatest = false
+            collectionView.reloadItems(at: [selectedIndexPath])
+        }
     }
 }
 
@@ -63,7 +72,7 @@ extension RatingViewController: UICollectionViewDataSource {
         cell.ratingButton.setTitle(String(indexPath.row + 1), for: .normal)
         cell.ratingButton.addTarget(self, action: #selector(clickRating), for: .touchUpInside)
         cell.ratingButton.tag = indexPath.row
-        if selectedIndexPath.row == indexPath.row {
+        if !reloadLatest {
             cell.ratingButton.backgroundColor = greenColor
             cell.ratingButton.setTitleColor(UIColor.white, for: .normal)
         } else {

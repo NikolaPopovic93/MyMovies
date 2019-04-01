@@ -74,6 +74,12 @@
          contextName = "RatingViewController.clickRating(button:):RatingViewController.swift">
          <PersistentStrings>
             <PersistentString
+               value = "selectedIndexPath.row">
+            </PersistentString>
+            <PersistentString
+               value = "rating.index">
+            </PersistentString>
+            <PersistentString
                value = "button.tag">
             </PersistentString>
          </PersistentStrings>
@@ -111,18 +117,18 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "GLOBAL">
-         <PersistentStrings>
-            <PersistentString
-               value = "Utilities.getAbsolutPosterPath(imagePath: cast.profilePath)">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
          contextName = "static Utilities.getEnglishName(iso:):Utilities.swift">
          <PersistentStrings>
             <PersistentString
                value = " SharedDataManager.sharedInstance.languages">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GLOBAL">
+         <PersistentStrings>
+            <PersistentString
+               value = "Utilities.getAbsolutPosterPath(imagePath: cast.profilePath)">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
